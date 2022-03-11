@@ -1559,3 +1559,1797 @@
 00:57:22.160 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 11 on topic-partition test-topic-replicated-0, retrying (1 attempts left). Error: NOT_ENOUGH_REPLICAS
 00:57:25.162 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 12 on topic-partition test-topic-replicated-0, retrying (0 attempts left). Error: NOT_ENOUGH_REPLICAS
 00:57:28.165 [kafka-producer-network-thread | producer-1] ERROR com.mmks.producer.MessageProducer - Exception in callback Messages are rejected since there are fewer in-sync replicas than required.
+01:29:55.050 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringSerializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringSerializer
+
+01:30:27.131 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+01:30:27.321 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+01:30:27.322 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+01:30:27.322 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646922627318
+01:30:27.324 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Subscribed to topic(s): test-topic-replicated
+01:31:14.727 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+01:31:14.897 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+01:31:14.899 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+01:31:14.899 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646922674895
+01:31:14.901 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Subscribed to topic(s): test-topic-replicated
+01:31:15.105 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+01:31:15.106 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+01:31:15.108 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+01:31:15.119 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+01:31:15.130 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Finished assignment for group at generation 1: {consumer-messageconsumer-1-3f102391-40e9-48be-a5b5-03436e463162=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+01:31:15.144 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Successfully joined group with generation 1
+01:31:15.152 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+01:31:15.163 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Found no committed offset for partition test-topic-replicated-0
+01:31:15.163 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Found no committed offset for partition test-topic-replicated-1
+01:31:15.163 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Found no committed offset for partition test-topic-replicated-2
+01:31:15.180 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Resetting offset for partition test-topic-replicated-2 to offset 10.
+01:31:15.184 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Resetting offset for partition test-topic-replicated-0 to offset 12.
+01:31:15.184 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Resetting offset for partition test-topic-replicated-1 to offset 10.
+12:39:56.958 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:39:57.127 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:39:57.128 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:39:57.128 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646962797124
+12:39:57.131 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Subscribed to topic(s): test-topic-replicated
+12:39:57.357 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:39:57.358 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:39:57.360 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:39:57.377 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:39:57.385 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Finished assignment for group at generation 3: {consumer-messageconsumer-1-61740c28-bd13-464a-bb0a-268f5324cc0b=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+12:39:57.397 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Successfully joined group with generation 3
+12:39:57.404 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:39:57.415 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:39:57.416 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:39:57.416 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:41:27.026 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:41:27.221 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:41:27.222 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:41:27.222 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646962887218
+12:41:27.224 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Subscribed to topic(s): test-topic-replicated
+12:41:27.441 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:41:27.442 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:41:27.444 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:41:27.450 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:41:34.430 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Finished assignment for group at generation 4: {consumer-messageconsumer-1-5ae5bfc4-9142-425c-bb96-33828c25e784=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+12:41:34.433 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Successfully joined group with generation 4
+12:41:34.442 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:41:34.451 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:41:34.470 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:41:34.472 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:42:28.855 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:42:29.050 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:42:29.051 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:42:29.052 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646962949047
+12:42:29.054 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Subscribed to topic(s): test-topic-replicated
+12:42:29.285 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:42:29.286 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:42:29.288 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:42:29.294 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] (Re-)joining group
+12:42:29.308 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Finished assignment for group at generation 6: {consumer-messageconsumer-1-82ae00d2-531d-4191-bdd1-dbf88eddcb64=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@557a1e2d}
+12:42:29.311 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Successfully joined group with generation 6
+12:42:29.314 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:42:29.322 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:42:29.323 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:42:29.324 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer-1, groupId=messageconsumer] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:43:20.366 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:43:20.568 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:43:20.569 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:43:20.569 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963000565
+12:43:20.572 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Subscribed to topic(s): test-topic-replicated
+12:43:20.804 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:43:20.806 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:43:20.808 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:20.818 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:20.826 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Finished assignment for group at generation 1: {consumer-messageconsumer1-1-8d4b14dd-e9a8-4603-ba35-5e490a379710=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@557a1e2d}
+12:43:20.830 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Successfully joined group with generation 1
+12:43:20.834 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:43:20.841 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-0
+12:43:20.841 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-1
+12:43:20.841 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-2
+12:43:20.862 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-1 to offset 0.
+12:43:20.867 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-0 to offset 0.
+12:43:20.867 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-2 to offset 0.
+12:43:31.207 [kafka-coordinator-heartbeat-thread | messageconsumer1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+12:43:31.212 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:43:31.212 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+12:43:31.308 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:43:31.318 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Attempt to heartbeat failed for since member id consumer-messageconsumer1-1-8d4b14dd-e9a8-4603-ba35-5e490a379710 is not valid.
+12:43:31.319 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Failing OffsetCommit request since the consumer is not part of an active group
+12:43:31.319 [main] WARN  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Synchronous auto-commit of offsets {test-topic-replicated-0=OffsetAndMetadata{offset=15, leaderEpoch=12, metadata=''}, test-topic-replicated-1=OffsetAndMetadata{offset=11, leaderEpoch=11, metadata=''}, test-topic-replicated-2=OffsetAndMetadata{offset=12, leaderEpoch=9, metadata=''}} failed: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing max.poll.interval.ms or by reducing the maximum size of batches returned in poll() with max.poll.records.
+12:43:31.319 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+12:43:31.319 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Lost previously assigned partitions test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:43:31.319 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:31.320 [main] ERROR o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Offset commit failed on partition test-topic-replicated-0 at offset 0: The coordinator is not aware of this member.
+12:43:31.321 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:31.323 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Finished assignment for group at generation 3: {consumer-messageconsumer1-1-ade5977a-3e45-4b81-94c1-0864be0b462a=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@756cf158}
+12:43:31.324 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Successfully joined group with generation 3
+12:43:31.324 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:43:31.325 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-0
+12:43:31.325 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-1
+12:43:31.325 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Found no committed offset for partition test-topic-replicated-2
+12:43:31.326 [main] WARN  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Asynchronous auto-commit of offsets {test-topic-replicated-0=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic-replicated-1=OffsetAndMetadata{offset=11, leaderEpoch=11, metadata=''}, test-topic-replicated-2=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}} failed: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing max.poll.interval.ms or by reducing the maximum size of batches returned in poll() with max.poll.records.
+12:43:31.819 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-0 to offset 0.
+12:43:31.820 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-1 to offset 0.
+12:43:31.822 [kafka-coordinator-heartbeat-thread | messageconsumer1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Resetting offset for partition test-topic-replicated-2 to offset 0.
+12:43:43.119 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:43:43.308 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:43:43.309 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:43:43.310 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963023306
+12:43:43.312 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Subscribed to topic(s): test-topic-replicated
+12:43:43.518 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:43:43.519 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:43:43.521 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:43.527 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] (Re-)joining group
+12:43:51.333 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Finished assignment for group at generation 4: {consumer-messageconsumer1-1-998fd40b-55e3-4976-97a4-4c77a1c61a27=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+12:43:51.336 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Successfully joined group with generation 4
+12:43:51.345 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:43:51.355 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:43:51.357 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:43:51.357 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer1-1, groupId=messageconsumer1] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=11, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:43:57.988 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:43:58.165 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:43:58.167 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:43:58.167 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963038161
+12:43:58.169 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:43:58.376 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:43:58.377 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:43:58.379 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:43:58.385 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:43:58.388 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 1: {consumer-messageconsumer2-1-801c8c82-bac9-439f-a377-3f574669a143=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+12:43:58.390 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 1
+12:43:58.398 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:43:58.406 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Found no committed offset for partition test-topic-replicated-0
+12:43:58.406 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Found no committed offset for partition test-topic-replicated-1
+12:43:58.406 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Found no committed offset for partition test-topic-replicated-2
+12:43:58.419 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Resetting offset for partition test-topic-replicated-2 to offset 0.
+12:43:58.423 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Resetting offset for partition test-topic-replicated-0 to offset 0.
+12:43:58.423 [main] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Resetting offset for partition test-topic-replicated-1 to offset 0.
+12:52:06.155 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:52:06.345 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:52:06.346 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:52:06.346 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963526341
+12:52:06.349 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:52:06.582 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:52:06.583 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:52:06.586 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:06.593 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:07.505 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:52:07.507 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+12:52:07.507 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:07.510 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 2: {consumer-messageconsumer2-1-801c8c82-bac9-439f-a377-3f574669a143=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@3b77a04f, consumer-messageconsumer2-1-d1edac33-d5ac-4a9b-b52e-d3dce6a8e4e0=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@7b324585}
+12:52:07.511 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 2
+12:52:07.512 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1
+12:52:07.512 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 2
+12:52:07.513 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:52:07.514 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=11, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:52:07.515 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-2
+12:52:07.528 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:52:08.750 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:52:08.902 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:52:08.903 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:52:08.903 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963528900
+12:52:08.905 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:52:09.096 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:52:09.097 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:52:09.100 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:09.106 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:10.512 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:52:10.513 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0, test-topic-replicated-1
+12:52:10.513 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:10.515 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:52:10.517 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-2
+12:52:10.517 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:52:10.519 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 3: {consumer-messageconsumer2-1-5e21a891-1d41-47a6-9a00-d58f802cd731=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@a4b2d8f, consumer-messageconsumer2-1-801c8c82-bac9-439f-a377-3f574669a143=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@dcfda20, consumer-messageconsumer2-1-d1edac33-d5ac-4a9b-b52e-d3dce6a8e4e0=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@6d304f9d}
+12:52:10.520 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 3
+12:52:10.520 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 3
+12:52:10.520 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-1
+12:52:10.521 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-2
+12:52:10.521 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 3
+12:52:10.521 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=11, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:52:10.522 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+12:52:10.525 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0
+12:52:10.540 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:58:53.225 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:58:53.402 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:58:53.403 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:58:53.403 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963933399
+12:58:53.405 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:58:53.602 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:58:53.604 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:58:53.606 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:53.613 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:54.771 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:58:54.968 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:58:54.970 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:58:54.970 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963934965
+12:58:54.972 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:58:55.203 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:58:55.204 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:58:55.206 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:55.214 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:55.599 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:58:55.601 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0
+12:58:55.601 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:56.504 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+12:58:56.684 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+12:58:56.685 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+12:58:56.685 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646963936682
+12:58:56.688 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+12:58:56.948 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+12:58:56.949 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12:58:56.952 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:58:56.961 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:59:02.615 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 4: {consumer-messageconsumer2-1-5e21a891-1d41-47a6-9a00-d58f802cd731=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706, consumer-messageconsumer2-1-c8740dec-1eab-417c-86bc-d018d342325f=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@63fdab07, consumer-messageconsumer2-1-3448c616-5c3d-4024-a53d-9e74d3b97647=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@7b5a12ae, consumer-messageconsumer2-1-2ef95b48-1bf3-435d-a200-22d15a98e608=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5553d0f5}
+12:59:02.619 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 4
+12:59:02.619 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 4
+12:59:02.620 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 4
+12:59:02.621 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: 
+12:59:02.624 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0
+12:59:02.629 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-1
+12:59:02.643 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=32, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:59:02.643 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=32, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:59:14.623 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:59:14.623 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:59:14.625 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+12:59:14.625 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions 
+12:59:14.625 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:59:14.626 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-1
+12:59:14.626 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:59:14.626 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0
+12:59:14.627 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+12:59:14.629 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 5: {consumer-messageconsumer2-1-c8740dec-1eab-417c-86bc-d018d342325f=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@73163d48, consumer-messageconsumer2-1-3448c616-5c3d-4024-a53d-9e74d3b97647=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@58c34bb3, consumer-messageconsumer2-1-2ef95b48-1bf3-435d-a200-22d15a98e608=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@56a4479a}
+12:59:14.630 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 5
+12:59:14.630 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 5
+12:59:14.630 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 5
+12:59:14.631 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-1
+12:59:14.631 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0
+12:59:14.632 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=32, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+12:59:14.632 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=32, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+12:59:14.634 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-2
+12:59:14.639 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=24, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+13:00:14.644 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+13:00:14.645 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+13:00:14.645 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0
+13:00:14.645 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:00:14.646 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-1
+13:00:14.646 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:00:14.648 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 6: {consumer-messageconsumer2-1-3448c616-5c3d-4024-a53d-9e74d3b97647=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@ed3068a, consumer-messageconsumer2-1-2ef95b48-1bf3-435d-a200-22d15a98e608=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@7c2b6087}
+13:00:14.649 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 6
+13:00:14.649 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 6
+13:00:14.649 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-2
+13:00:14.649 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1
+13:00:14.650 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=33, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+13:00:14.650 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=42, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+13:00:14.650 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=41, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+13:17:26.564 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 20000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+13:17:26.743 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+13:17:26.744 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+13:17:26.745 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646965046740
+13:17:26.746 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+13:17:26.947 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+13:17:26.948 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+13:17:26.950 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:17:26.955 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:17:26.959 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 8: {consumer-messageconsumer2-1-8de00b8e-cfee-490d-b1f3-6a1296e3afad=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+13:17:26.962 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 8
+13:17:26.969 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+13:17:26.979 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=35, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+13:17:26.980 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=42, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+13:17:26.981 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=41, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+13:17:38.983 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 20000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+13:17:39.189 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+13:17:39.190 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+13:17:39.190 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646965059186
+13:17:39.193 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+13:17:39.400 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+13:17:39.402 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+13:17:39.404 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:17:39.410 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+13:17:45.968 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 9: {consumer-messageconsumer2-1-fdb39e44-352c-4c3e-abd5-01dc45c2c4a5=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@5b529706}
+13:17:45.971 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 9
+13:17:45.979 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+13:17:45.987 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=35, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+13:17:45.989 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=42, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+13:17:45.989 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=41, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+15:42:14.778 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:42:14.951 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+15:42:14.953 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+15:42:14.953 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646973734948
+15:42:14.957 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+15:42:15.155 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+15:42:15.156 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+15:42:15.158 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:42:15.167 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:42:15.172 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 11: {consumer-messageconsumer2-1-bf5ead3c-cfb6-4db5-9da0-e753b6f7e65e=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@781f10f2}
+15:42:15.179 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 11
+15:42:15.182 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+15:42:15.198 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=35, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=9}}
+15:42:15.199 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=42, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=12}}
+15:42:15.199 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=41, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=11}}
+15:42:25.380 [main] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Error sending fetch request (sessionId=1263748378, epoch=32) to node 1: {}.
+org.apache.kafka.common.errors.DisconnectException: null
+15:42:25.444 [main] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Connection to node 1 (localhost/127.0.0.1:9093) could not be established. Broker may not be available.
+15:42:25.444 [main] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Error sending fetch request (sessionId=1263748378, epoch=INITIAL) to node 1: {}.
+org.apache.kafka.common.errors.DisconnectException: null
+15:42:25.590 [main] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Connection to node 1 (localhost/127.0.0.1:9093) could not be established. Broker may not be available.
+15:42:25.591 [main] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Error sending fetch request (sessionId=1263748378, epoch=INITIAL) to node 1: {}.
+org.apache.kafka.common.errors.DisconnectException: null
+15:42:25.780 [main] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Connection to node 1 (localhost/127.0.0.1:9093) could not be established. Broker may not be available.
+15:42:25.781 [main] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Error sending fetch request (sessionId=1263748378, epoch=INITIAL) to node 1: {}.
+org.apache.kafka.common.errors.DisconnectException: null
+15:42:33.394 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:42:33.596 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+15:42:33.597 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+15:42:33.597 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646973753593
+15:42:33.600 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+15:42:33.807 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+15:42:33.808 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+15:42:33.810 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:42:33.818 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:42:40.192 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 12: {consumer-messageconsumer2-1-eeb388df-f360-49bf-982d-6e07947b8faa=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@781f10f2}
+15:42:40.195 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 12
+15:42:40.199 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+15:42:40.214 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=35, offsetEpoch=Optional[9], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=10}}
+15:42:40.216 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=43, offsetEpoch=Optional[12], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=13}}
+15:42:40.216 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=41, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=12}}
+15:45:28.087 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:45:28.239 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+15:45:28.240 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+15:45:28.240 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646973928236
+15:45:28.242 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+15:45:28.420 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+15:45:28.421 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+15:45:28.422 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:45:28.428 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:45:35.258 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 13: {consumer-messageconsumer2-1-d0e1c134-c936-4416-8af3-bccbb48ebe0c=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@781f10f2}
+15:45:35.261 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 13
+15:45:35.265 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+15:45:35.281 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=37, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=11}}
+15:45:35.282 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[14], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=15}}
+15:45:35.282 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[13], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=13}}
+15:46:12.395 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = messageconsumer2
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+15:46:12.565 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.4.0
+15:46:12.566 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 77a89fcf8d7fa018
+15:46:12.566 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646973972563
+15:46:12.568 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Subscribed to topic(s): test-topic-replicated
+15:46:12.781 [main] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Cluster ID: M0H76Rm8T7ePjtzDCIVmhA
+15:46:12.782 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+15:46:12.784 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:46:12.790 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:46:14.276 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+15:46:14.276 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+15:46:14.277 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:46:14.279 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 14: {consumer-messageconsumer2-1-d0e1c134-c936-4416-8af3-bccbb48ebe0c=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@57fd91c9, consumer-messageconsumer2-1-59e23d9f-32b3-4fab-9bb8-fd48a1156d40=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@6cfcd46d}
+15:46:14.281 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 14
+15:46:14.281 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-2
+15:46:14.281 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 14
+15:46:14.282 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=37, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=11}}
+15:46:14.286 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1
+15:46:14.299 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[14], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=15}}
+15:46:14.301 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[13], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=13}}
+15:46:38.288 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Attempt to heartbeat failed since group is rebalancing
+15:46:38.288 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Revoke previously assigned partitions test-topic-replicated-2
+15:46:38.289 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] (Re-)joining group
+15:46:38.290 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Finished assignment for group at generation 15: {consumer-messageconsumer2-1-d0e1c134-c936-4416-8af3-bccbb48ebe0c=org.apache.kafka.clients.consumer.ConsumerPartitionAssignor$Assignment@674658f7}
+15:46:38.292 [main] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Successfully joined group with generation 15
+15:46:38.292 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Adding newly assigned partitions: test-topic-replicated-0, test-topic-replicated-1, test-topic-replicated-2
+15:46:38.293 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-2 to the committed offset FetchPosition{offset=37, offsetEpoch=Optional[11], currentLeader=LeaderAndEpoch{leader=localhost:9092 (id: 0 rack: null), epoch=11}}
+15:46:38.293 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-0 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[14], currentLeader=LeaderAndEpoch{leader=localhost:9093 (id: 1 rack: null), epoch=15}}
+15:46:38.293 [main] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-messageconsumer2-1, groupId=messageconsumer2] Setting offset for partition test-topic-replicated-1 to the committed offset FetchPosition{offset=44, offsetEpoch=Optional[13], currentLeader=LeaderAndEpoch{leader=localhost:9094 (id: 2 rack: null), epoch=13}}
